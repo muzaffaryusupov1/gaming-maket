@@ -1,0 +1,162 @@
+/* BANNER - START */
+
+
+.banner{
+    background: linear-gradient(180deg, #6F7DFB 0%, #26308C 100%);
+    margin-top: 100px;
+
+
+    &__title{
+        color: #FFF;
+        font-family: 'Raleway', sans-serif;
+        font-size: 60px;
+        font-weight: 900;
+        line-height: 120%;
+
+        @media screen and (max-width: 700px) {
+            font-size: 40px;
+        }
+
+        @media screen and (max-width: 500px) {
+            font-size: 30px;
+        }
+
+        @media screen and (max-width: 400px) {
+            font-size: 20px;
+        }
+    }
+
+    &__header{
+        @extend %flex-center-center;
+        padding-top: 70px;
+        margin-bottom: 56px;
+    }
+
+    &__content{
+        display: flex;
+        gap: 83px;
+
+        @media screen and (max-width: 1100px) {
+            flex-direction: column;
+        }
+        &__cards{ 
+            background-color: $white-color;
+            padding: 0px 32px;
+            border-radius: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            
+
+            &__title{
+                color: $btn-color;
+                font-family: 'Raleway', sans-serif;
+                font-size: 30px;
+                font-weight: 900;
+                line-height: 150%;
+
+                @media screen and (max-width: 700px) {
+                    font-size: 20px;
+                }
+
+                @media screen and (max-width: 500px) {
+                    font-size: 15px;
+                }
+            }
+
+            &__time{
+                color: #023047;
+                font-family: 'Raleway', sans-serif;
+                font-size: 16px;
+                font-weight: 900;
+                line-height: 150%;
+
+                @media screen and (max-width: 700px) {
+                    font-size: 13px;
+                }
+            }
+
+            &_between{
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+            }
+        }
+
+        &__cards1{
+            background-color: $white-color;
+            padding: 0px 32px;
+            border-radius: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            
+
+            &__title{
+                color: $btn-color;
+                font-family: 'Raleway', sans-serif;
+                font-size: 30px;
+                font-weight: 900;
+                line-height: 150%;
+                @media screen and (max-width: 700px) {
+                    font-size: 20px;
+                }
+
+                @media screen and (max-width: 500px) {
+                    font-size: 15px;
+                }
+            }
+
+            &__time{
+                color: #023047;
+                font-family: 'Raleway', sans-serif;
+                font-size: 16px;
+                font-weight: 900;
+                line-height: 150%;
+            }
+
+            &_between{
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+            }
+        }
+
+        &__line{
+            height: 9px;
+            background-color: $btn-color;
+            border-radius: 24px;
+        }
+
+
+        &__line1{
+            height: 9px;
+            background-color: $btn-color;
+            border-radius: 24px;
+        }
+    }
+
+    &__button{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__btn{
+        padding: 16px 32px;
+        border-radius: 24px;
+        background-color: $orange-color;
+        color: #FFF;
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        margin: 40px 0 70px 0;
+        transition: all 0.2s ease-in-out;
+        &:hover{
+            background-color: $white-color;
+            color: $btn-color;
+        }
+    }
+}
+
+
+/* BANNER - END */

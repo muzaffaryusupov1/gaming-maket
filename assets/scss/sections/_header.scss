@@ -1,0 +1,250 @@
+.header{
+    background: linear-gradient(180deg, #6F7DFB 0%, #26308C 100%);
+    &__wrap{
+        padding: 48px 0;
+        @extend %flex-between;
+    }
+
+    &_mobile{
+        display: none;
+        @media screen and (max-width: 690px) {
+            display: block;
+        }
+    }
+
+    &__navbar{
+        @extend %flex-center;
+        gap: 60px;
+
+        @media screen and (max-width: 800px) {
+            gap: 44px;
+        }
+        @media screen and (max-width: 730px) {
+            gap: 30px;
+        }
+        @media screen and (max-width: 690px) {
+            display: none;
+        }
+        &_links{
+            color: $white-color;
+            font-size: 16px;
+            font-weight: 700;
+            transition: all 0.2s ease-in-out;
+            &:hover{
+                color: $btn-color;
+            }
+        }
+
+        &_btn{
+            border-radius: 24px;
+            background-color: $btn-color;
+            padding: 16px 32px;
+            color: $white-color;
+            font-size: 18px;
+            font-weight: 700;
+            transition: all 0.2s ease-in-out;
+            &:hover{
+                background-color: $white-color;
+                color: $btn-color;
+            }
+        }
+    }
+
+    &__content{
+        margin-top: 100px;
+        display: flex;
+        @media screen and (max-width: 970px) {
+            flex-direction: column;
+        }
+
+        @media screen and (max-width: 580px){
+            margin-top: 40px;
+        }
+
+        @media screen and (max-width: 450px){
+            margin-top: 15px;
+        }
+
+        &_left{
+            @media screen and (max-width: 900px) {
+                width: 90%;
+            }
+
+            &_title{
+                color: $white-color;
+                font-family: 'Raleway', sans-serif;
+                font-size: 50px;
+                font-weight: 900;
+                line-height: 125%;
+                margin-bottom: 18px;
+
+                @media screen and (max-width: 690px) {
+                    text-align: center;
+                    font-size: 36px;
+                }
+            }
+    
+            &_subtitle{
+                color: $white-color;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 200%;
+                margin-bottom: 30px;
+                @media screen and (max-width: 690px) {
+                    text-align: center;
+                    font-size: 14px;
+                }
+            }
+    
+            &_btn{
+                @extend %flex-center;
+                gap: 10px;
+                border-radius: 24px;
+                background-color: $orange-color;
+                padding: 16px 32px;
+                color: $white-color;
+                font-size: 18px;
+                font-weight: 700;
+                transition: all 0.2s ease-in-out;
+                
+                &:hover{
+                    svg path{
+                        fill: $orange-color;
+                    }
+                    background-color: $white-color;
+                    color: $orange-color;
+                }
+
+                @media screen and (max-width: 500px) {
+                    padding: 8px 20px;
+                    font-size: 12px;
+                }
+            }
+        }
+
+
+       
+        &_right{
+            display: flex;
+
+            @media screen and (max-width: 400px) {
+                flex-direction: column;
+            }
+            &_div{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+            }
+            &_result{
+                width: 206px;
+                height: 90px;
+                background-color: $white-color;
+                border-radius: 24px;
+                @extend %flex-center-center;
+                flex-direction: column;
+                margin-left: 32px;
+                box-shadow: 11px 8px 6px 5px rgba(47, 111, 161, 0.7);
+
+                @media screen and (max-width: 700px) {
+                    width: 180px;
+                    height: 72px;
+                }
+
+                @media screen and (max-width: 400px) {
+                    width: 150px;
+                    height: 56px;
+                    margin: 20px;
+                }
+
+                &_title{
+                    color: #023047;
+                    font-size: 36px;
+                    font-weight: 700;
+                    line-height: 125%;
+
+                    @media screen and (max-width: 600px) {
+                        font-size: 28px;
+                    }
+
+                    @media screen and (max-width: 400px) {
+                        font-size: 19px;
+                    }
+
+                }
+                &_subtitle{
+                    color: $btn-color;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 125%;
+
+                    @media screen and (max-width: 600px) {
+                        font-size: 13px;
+                    }
+
+                    @media screen and (max-width: 400px) {
+                        font-size: 11px;
+                    }
+                }
+            }
+            &_result1{
+                width: 206px;
+                height: 90px;
+                background-color: $white-color;
+                border-radius: 24px;
+                @extend %flex-center-center;
+                flex-direction: column;
+                box-shadow: 11px 8px 6px 5px rgba(47, 111, 161, 0.7);
+
+                @media screen and (max-width: 700px) {
+                    width: 182px;
+                    height: 75px;
+                }
+
+                @media screen and (max-width: 400px) {
+                    width: 150px;
+                    height: 60px;
+                }
+
+                &_title{
+                    @extend %flex-center;
+                    color: #023047;
+                    font-size: 36px;
+                    font-weight: 700;
+                    line-height: 125%;
+
+                    @media screen and (max-width: 600px) {
+                        font-size: 28px;
+                    }
+
+                    @media screen and (max-width: 400px) {
+                        font-size: 19px;
+                    }
+
+                }
+                &_subtitle{
+                    color: $btn-color;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 125%;
+
+                    @media screen and (max-width: 600px) {
+                        font-size: 13px;
+                    }
+
+                    @media screen and (max-width: 400px) {
+                        font-size: 11px;
+                    }
+                }
+            }
+
+            &_img{
+                @media screen and (max-width: 700px) {
+                    width: 60%;
+                }
+                @media screen and (max-width: 700px) {
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
