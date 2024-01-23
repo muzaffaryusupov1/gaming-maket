@@ -256,17 +256,21 @@
             }
 
             &_mobile{
-                margin-top: 15px;
-                width: 135px;
-                height: 30px;
-                border-radius: 8px;
-                background-color: $btn-color;
-                color: $white-color;
-                font-family: 'Poppins', sans-serif;
-                font-size: 16px;
-                font-weight: 400;
-                line-height: 200%;
-                transition: all 0.2s ease-in-out;
+                display: none;
+
+                @media screen and (max-width: 550px) {
+                    margin-top: 15px;
+                    width: 135px;
+                    height: 30px;
+                    border-radius: 8px;
+                    background-color: $btn-color;
+                    color: $white-color;
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 200%;
+                    transition: all 0.2s ease-in-out;
+                }
             }
         }
     }
